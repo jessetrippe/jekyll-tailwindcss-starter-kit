@@ -1,0 +1,19 @@
+
+# Site settings
+title: Your awesome title
+
+# Build settings
+include:
+  - _pages/
+
+exclude:
+  - tailwind.config.js
+  - postcss.config.js
+  - package.json
+  - package-lock.json
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - yarn.lock
+  - yarn-error.log
+  - .jekyll-cache/
