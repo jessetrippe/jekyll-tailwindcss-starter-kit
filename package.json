@@ -1,15 +1,15 @@
 {
-	"license": "MIT",
-	"dependencies": {
-		"@tailwindcss/forms": "^0.3.3",
-		"@tailwindcss/typography": "^0.4.1",
-		"browser-sync": "^2.27.5",
-		"concurrently": "^6.2.1",
-		"global": "^4.4.0",
-		"tailwindcss": "^2.2.8"
-	},
-	"scripts": {
-		"build": "concurrently \"jekyll build\" \"NODE_ENV=production yarn tailwindcss -i styles/main.css -o _site/styles/main.css --minify\"",
-		"watch": "concurrently \"jekyll build --watch\" \"yarn tailwindcss -i styles/main.css -o _site/styles/main.css --watch\" \"yarn browser-sync start --server '_site' --files '_site' --no-notify\""
-	}
+  "license": "MIT",
+  "dependencies": {
+    "@tailwindcss/forms": "^0.3.3",
+    "@tailwindcss/typography": "^0.4.1",
+    "browser-sync": "^2.27.5",
+    "concurrently": "^6.2.1",
+    "global": "^4.4.0",
+    "tailwindcss": "^2.2.8"
+  },
+  "scripts": {
+    "build": "concurrently \"jekyll build\" \"NODE_ENV=production yarn tailwindcss -i styles/main.css -o _site/styles/main.css --minify\"",
+    "watch": "concurrently \"jekyll build --watch\" \"yarn tailwindcss -i styles/main.css -o _site/styles/main.css --watch\" \"yarn browser-sync start --server '_site' --files '_site' --no-notify\""
+  }
 }
