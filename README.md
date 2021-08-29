@@ -9,7 +9,7 @@ This setup requires the following to already be installed:
 * [TailwindCSS](http://tailwindcss.com)
 * [Jekyll](http://jekyllrb.com)
 
-Yarn install. Bundle install.
+Once those are installed, in your terminal in the root directory of the site, type `yarn install` then `bundle install`.
 
 ## Usage
 
