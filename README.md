@@ -14,7 +14,6 @@ Once those are installed, in your terminal in the root directory of the site, ty
 ## Usage
 
 When developing your site, enter the root directory and type `yarn watch` which does the following:
-* Initial site build
 * Continuous watching and building via Jekyll of page, posts, JS, images, etc.
 * Continuous watching and building via TailwindCSS CLI which watches page, posts, JS, HTML for any changes and then builds a new CSS file.
 * Continuous watching and browser refreshing of any files being served from the `_site/` folder.
