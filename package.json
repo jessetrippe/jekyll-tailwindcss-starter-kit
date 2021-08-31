@@ -12,7 +12,9 @@
     "tailwindcss": "^2.2.8"
   },
   "scripts": {
-    "build": "concurrently \"jekyll build\" \"NODE_ENV=production yarn tailwindcss -i styles/main.css --postcss -o _site/styles/main.css --minify\"",
+    "prebuild": "jekyll build",
+    "build": "NODE_ENV=production yarn tailwindcss -i styles/main.css --postcss -o _site/styles/main.css --minify",
+    "prewatch": "jekyll build",
     "watch": "concurrently \"jekyll build --watch\" \"yarn tailwindcss -i styles/main.css --postcss -o _site/styles/main.css --watch\" \"yarn browser-sync start --server '_site' --files '_site' --no-notify\""
   }
 }
