@@ -1,12 +1,8 @@
 module.exports = {
   mode: 'jit',
   purge: [
-    './_includes/**/*.html',
-    './_layouts/**/*.html',
-    './_posts/*.md',
-    './_pages/*.md',
-    './*.html',
-    './scripts/**/*.js',
+    './_site/**/*.js',
+    './_site/**/*.html',
   ],
   plugins: [
     require('@tailwindcss/typography'),
