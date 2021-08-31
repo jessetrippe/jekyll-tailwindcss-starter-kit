@@ -3,9 +3,11 @@
   "dependencies": {
     "@tailwindcss/forms": "^0.3.3",
     "@tailwindcss/typography": "^0.4.1",
+    "autoprefixer": "^10.3.3",
     "browser-sync": "^2.27.5",
     "concurrently": "^6.2.1",
     "global": "^4.4.0",
+    "postcss": "^8.3.6",
     "tailwindcss": "^2.2.8"
   },
   "scripts": {
