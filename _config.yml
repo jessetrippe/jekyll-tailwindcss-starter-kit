@@ -5,6 +5,14 @@ title: Your awesome title
 # Build settings
 include:
   - _pages/
+  
+plugins:
+    - jekyll-postcss
+  
+postcss:
+  cache: false
+  
+css_dir: "styles" # defaults to "css"
 
 exclude:
   - tailwind.config.js

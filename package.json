@@ -1,20 +1,18 @@
 {
-  "license": "MIT",
-  "dependencies": {
-    "@tailwindcss/forms": "^0.3.3",
-    "@tailwindcss/typography": "^0.4.1",
-    "autoprefixer": "^10.3.3",
-    "browser-sync": "^2.27.5",
-    "concurrently": "^6.2.1",
-    "global": "^4.4.0",
-    "postcss": "^8.3.6",
-    "postcss-import": "^14.0.2",
-    "tailwindcss": "^2.2.8"
-  },
-  "scripts": {
-    "prebuild": "jekyll build",
-    "build": "NODE_ENV=production yarn tailwindcss -i styles/main.css --postcss -o _site/styles/main.css --minify",
-    "prewatch": "jekyll build",
-    "watch": "concurrently \"jekyll build --watch\" \"yarn tailwindcss -i styles/main.css --postcss -o _site/styles/main.css --watch\" \"yarn browser-sync start --server '_site' --files '_site' --no-notify\""
+    "devDependencies": {
+      "@tailwindcss/forms": "^0.5.0",
+      "@tailwindcss/typography": "^0.5.2",
+      "autoprefixer": "^10.4.4",
+      "postcss": "^8.4.12",
+      "postcss-import": "^14.1.0",
+      "tailwindcss": "^3.0.23"
+    },
+    "dependencies": {
+      "cssnano": "^5.1.7"
+    },
+    "scripts": {
+      "dev": "bundle exec jekyll serve --watch --livereload",
+      "build": "JEKYLL_ENV=production bundle exec jekyll build"
+    }
   }
-}
+  
