@@ -4,4 +4,4 @@ title: Home
 permalink: /
 ---
 
-# Home page
+# Hello world!
