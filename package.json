@@ -9,7 +9,7 @@
     "cssnano": "^5.1.7"
   },
   "scripts": {
-    "dev": "bundle exec jekyll serve --watch --livereload",
+    "dev": "bundle exec jekyll serve --watch --livereload -o",
     "build": "JEKYLL_ENV=production bundle exec jekyll build"
   }
 }
