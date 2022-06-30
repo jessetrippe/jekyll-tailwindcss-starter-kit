@@ -5,7 +5,6 @@ Since JIT was added to TailwindCSS, getting it to work with PostCSS has been a s
 
 ## Installation
 This setup requires the following to already be installed:
-* [BrowserSync](https://browsersync.io)
 * [TailwindCSS](http://tailwindcss.com)
 * [Jekyll](http://jekyllrb.com)
 
